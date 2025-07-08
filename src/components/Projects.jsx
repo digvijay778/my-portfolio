@@ -316,7 +316,7 @@ export default function Projects() {
 
         <div className="text-center mt-12">
           <a
-            href="#"
+            href="https://github.com/digvijay778"
             target="_blank"
             rel="noopener noreferrer"
             className="cosmic-cta-button inline-flex items-center px-6 py-3 border border-blue-400 text-blue-400 rounded-full hover:bg-blue-400 hover:text-gray-900 transition"
