@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+/* Custom CSS */
+/* Hide Spline watermark */
+canvas + div[style*="position: absolute"] {
+  display: none !important;
+}
+
+/* Alternative approach */
+div[style*="Built with Spline"] {
+  display: none !important;
+}
+
+/* Hide bottom-right positioned elements (common watermark position) */
+div[style*="bottom: 16px"][style*="right: 16px"] {
+  display: none !important;
+}
+
+/* More specific targeting */
+div[style*="pointer-events: none"][style*="position: absolute"] {
+  display: none !important;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.floating { animation: float 3s ease-in-out infinite; }
+
+.gradient-text {
+  background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.card-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.skill-bar { transition: width 1.5s ease-in-out; }
+
+.nav-link {
+  position: relative;
+}
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+  transition: width 0.3s ease;
+}
+.nav-link:hover::after { width: 100%; }
