@@ -47,7 +47,7 @@ export default function About() {
           {/* Resume Button */}
           <div className="text-center md:text-left">
             <a 
-              href="/DigvijaySingh_Resume.pdf" 
+              href="/DigvijayResume.pdf" 
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-gradient-to-r from-blue-500 to-purple-600 text-white font-medium px-8 py-3 rounded-full shadow-lg hover:scale-105 hover:opacity-90 transition duration-300"
