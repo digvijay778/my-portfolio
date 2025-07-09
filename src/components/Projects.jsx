@@ -53,7 +53,7 @@ export default function Projects() {
       </div>
 
       <div className="container mx-auto px-6 relative z-10">
-        <h2 className="text-3xl md:text-4xl font-bold mb-16 text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500 drop-shadow animate-gradient-x">
+        <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500 drop-shadow animate-gradient-x">
           My Projects
         </h2>
 
@@ -72,7 +72,7 @@ export default function Projects() {
             
             <div className="relative">
               <img
-                src="/p5.png"
+                src="/p7.png.png"
                 alt="Task Trackr Screenshot"
                 className="w-full h-48 object-cover"
               />
